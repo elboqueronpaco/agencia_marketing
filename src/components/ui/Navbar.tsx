@@ -1,6 +1,8 @@
 import React, { FC } from 'react'
+import { navbarData } from '../../data/navbar.data'
+import { ButtonPrimary } from '../buttons/ButtonPrimary'
 import { LinkNav } from './LinkNav'
-import { NavbarWrapper } from './NavbarWrapper'
+import { NavbarWrapper, NavbarWrapperFull } from './NavbarWrapper'
 interface Props {
     toogleMenu: any
     open: boolean
@@ -16,4 +18,17 @@ export const Navbar: FC <Props> = ({toogleMenu, open}) => {
         <LinkNav to='/contact' label='Contact' onClick={toogleMenu} />
     </NavbarWrapper>
   )
+}
+
+export const NavbarFull = () => {
+    return (
+        <NavbarWrapperFull>
+            {
+                navbarData.map(({to, label}) => (
+                    <LinkNav key={to} to={to} label={label} />
+                ))
+            }
+            <ButtonPrimary />
+        </NavbarWrapperFull>
+    )
 }

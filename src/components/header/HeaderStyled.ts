@@ -12,5 +12,7 @@ export const HeaderStyled = styled.header`
     background-color: white;
     font-family: ${fonts.header.family};
     font-weight: ${fonts.header.weight};
+    padding-left: 1rem;
+    padding-right: 1rem;
                                                 
 `

@@ -1,28 +1,31 @@
 interface NavbarInterface {
     to: string
     label: string
-    openMenu?: any
 }
 const openMenu = () => {}
-export const navbarMobileData: NavbarInterface[] = [
+export const navbarData: NavbarInterface[] = [
     {
         to: '/cases',
-        label: 'Case',
-        openMenu: openMenu()
+        label: 'Case'
     },
     {
         to: '/services',
-        label: 'Services',
-        openMenu: openMenu()
+        label: 'Services'
     },
     {
         to: '/about-us',
-        label: 'About Us',
-        openMenu: openMenu()
+        label: 'About Us'
     },
     {
-        to: '/Careers',
-        label: 'Careers',
-        openMenu: openMenu()
+        to: '/careers',
+        label: 'Careers'
+    },
+    {
+        to: '/blog',
+        label: 'Blog'
+    },
+    {
+        to: '/contact',
+        label: 'Contact'
     }
 ]
