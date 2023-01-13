@@ -17,7 +17,7 @@ export const NavbarWrapper = styled.nav<Props>`
     //right: ${props => props.open ? '0' : '-100%'};
     padding-left:${measurement.container.padding};
     background-color: white;
-    
+    z-index: 2;
     
 `
 export const NavbarWrapperFull = styled.nav`

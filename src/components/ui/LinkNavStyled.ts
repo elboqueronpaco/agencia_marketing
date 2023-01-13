@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import { NavLink } from 'react-router-dom'
 import styled from 'styled-components'
 import { colors } from '../../themes'
@@ -7,7 +8,7 @@ export const LinkNavStyled = styled(NavLink)`
     transition: all .5 ease-in;
     padding-left: 1rem;
     padding-right: 1rem;
-    padding-bottom: 1rem;
+    padding-bottom: .5rem;
     :hover{
         color: ${colors.primary};
     }
@@ -21,4 +22,11 @@ export const LinkNavStyled = styled(NavLink)`
     @media screen and (min-width: 1024px) {
         font-size: 15px;
    }
+`
+export const LinkHeroHomeStyled = styled(Link)`
+    font-size: 1.1rem;
+    @media screen and (min-width: 831px) {
+        font-size: 13px;
+        
+    }
 `

@@ -29,3 +29,26 @@ export const navbarData: NavbarInterface[] = [
         label: 'Contact'
     }
 ]
+
+export const navHeroHome: NavbarInterface[]= [
+    {
+        to: '/services/development',
+        label: 'Full-Cycle Product Development'
+    },
+    {
+        to: '/services/prodct-design',
+        label: 'Digital Product Design'
+    },
+    {
+        to: '/services/branding',
+        label: 'Brading'
+    },
+    {
+        to: '/services/motion-desing',
+        label: 'Motion Design Company'
+    },
+    {
+        to: '/services/design-outstaffing',
+        label: 'Desing Outstaffing'
+    }
+]

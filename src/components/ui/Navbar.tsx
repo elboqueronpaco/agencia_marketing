@@ -16,6 +16,7 @@ export const Navbar: FC <Props> = ({toogleMenu, open}) => {
         <LinkNav to='/careers' label='Careers' onClick={toogleMenu} />
         <LinkNav to='/blog' label='Blog' onClick={toogleMenu} />
         <LinkNav to='/contact' label='Contact' onClick={toogleMenu} />
+        <ButtonPrimary />
     </NavbarWrapper>
   )
 }
